@@ -1,7 +1,8 @@
 # potential-batman
 ================
 
-Kodeblok
+| Kodeblok | col2| col3|
+| col1row2| noget helt andet| Og på den anden side|
 
 ```javascript
 var s = "JavaScript syntax highlighting";
