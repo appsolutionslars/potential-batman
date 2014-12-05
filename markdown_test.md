@@ -1,7 +1,7 @@
 ## Markdown test
 =======================
 
-Simple test ´incline´ for Markdown
+Simple test `incline code` for Markdown
 
 if (isAwesome){
       return true
