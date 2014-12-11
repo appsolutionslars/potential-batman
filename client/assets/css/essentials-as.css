@@ -1,0 +1,11 @@
+/* appSolutions essentials.css */
+
+/* pannel default*/
+.panel-default {
+  border-color: #ddd;
+}
+.panel-default > .panel-heading {
+  color: #333;
+  background-color: #f5f5f5;
+  border-color: #ddd;
+}

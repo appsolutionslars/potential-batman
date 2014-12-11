@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<!--[if IE 8]>			<html class="ie ie8"> <![endif]-->
+<!--[if IE 9]>			<html class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html>
+<!--<![endif]-->
+
+<head>
+	<meta charset="utf-8" />
+	<title>appSolutions - </title>
+	<meta name="keywords" content="HTML5,CSS3,Template" />
+	<meta name="description" content="" />
+	<meta name="Author" content="Dorin Grigoras [www.stepofweb.com]" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+	<!-- mobile settings -->
+	<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="assets/images/as/favicon.ico" />
+
+	<!-- WEB FONTS -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css" />
+
+	<!-- CORE CSS -->
+	<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="assets/css/font-awesome.css" rel="stylesheet" type="text/css" />
+	<link href="assets/css/sky-forms.css" rel="stylesheet" type="text/css" />
+	<link href="assets/css/weather-icons.min.css" rel="stylesheet" type="text/css" />
+	<link href="assets/css/line-icons.css" rel="stylesheet" type="text/css" />
+	<link href="assets/plugins/owl-carousel/owl.pack.css" rel="stylesheet" type="text/css" />
+	<link href="assets/plugins/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css" />
+	<link href="assets/css/animate.css" rel="stylesheet" type="text/css" />
+	<link href="assets/css/flexslider.css" rel="stylesheet" type="text/css" />
+
+	<!-- REVOLUTION SLIDER -->
+	<link href="assets/css/revolution-slider.css" rel="stylesheet" type="text/css" />
+	<link href="assets/css/layerslider.css" rel="stylesheet" type="text/css" />
+
+	<!-- REVOLUTION SLIDER EKSTRA for APPSOLUTIONS -->
+	<link href="assets/css/revolution-slider-as.css" rel="stylesheet" type="text/css" />
+
+	<!-- THEME CSS -->
+	<link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
+	<link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
+	<link href="assets/css/header-default.css" rel="stylesheet" type="text/css" />
+	<link href="assets/css/footer-default.css" rel="stylesheet" type="text/css" />
+	<link href="assets/css/color_scheme/red.css" rel="stylesheet" type="text/css" id="color_scheme" />
+
+	<!-- Morenizr -->
+	<script type="text/javascript" src="assets/plugins/modernizr.min.js"></script>
+
+	<!--[if lte IE 8]>
+			<script src="assets/plugins/respond.js"></script>
+		<![endif]-->
+</head>
+
+<!-- 
+		Available body classes: 
+			smoothscroll			= enable chrome browser smooth scroll
+			grey 					= grey content background
+			boxed 					= boxed style
+			pattern1 ... pattern10 	= background pattern
+
+		Background Image - add to body: 
+			data-background="assets/images/boxed_background/1.jpg"
+	-->
+
+<body class="smoothscroll">
+
+	<div id="wrapper">
+
+		<!-- Navigation  -->
+		<div id="header"></div>
+
+		<!-- PAGE TOP -->
+		<section class="page-title">
+			<div class="container">
+
+				<header>
+
+					<ul class="breadcrumb">
+						<!-- breadcrumb -->
+						<li><a href="#">Pages</a>
+						</li>
+						<li class="active">Contact</li>
+					</ul>
+					<!-- /breadcrumb -->
+
+					<h2><!-- Page Title -->
+							Contact us
+						</h2>
+					<!-- /Page Title -->
+
+				</header>
+
+			</div>
+		</section>
+		<!-- /PAGE TOP -->
+		<!-- CONTENT -->
+
+		<!-- GOOGLE MAP -->
+		<div id="gmap">
+			<!-- map container -->
+		</div>
+		
+		<!-- 57.455377,9.976572,17z  -->
+		<script type="text/javascript">
+			var $googlemap_latitude = 57.455377,
+				$googlemap_longitude = 9.976572,
+				$googlemap_zoom = 12;
+		</script>
+		<!-- /GOOGLE MAP -->
+
+
+		<!-- CONTENT -->
+		<section>
+			<div class="container">
+				<div class="row">
+
+					<!-- FORM -->
+					<div class="col-md-8">
+
+						<h3>Drop us a line or just say <strong><em>Hello!</em></strong></h3>
+
+						<!-- Alert -->
+						<div id="_sent_ok_" class="alert alert-success fade in fsize16 hide">
+							<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+							<span id="_msg_txt_"><strong>Thank You!</strong> Your message successfully sent!</span>
+						</div>
+						<!-- /Alert -->
+
+						<form id="contactForm" action="php/contact.php" method="post">
+							<div class="row">
+								<div class="form-group">
+									<div class="col-md-6">
+										<label>Full Name *</label>
+										<input required type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control" name="contact_name" id="contact_name">
+									</div>
+									<div class="col-md-6">
+										<label>E-mail Address *</label>
+										<input required type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" name="contact_email" id="contact_email">
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="form-group">
+									<div class="col-md-12">
+										<label>Subject</label>
+										<input type="text" value="" data-msg-required="Please enter the subject." maxlength="100" class="form-control" name="contact_subject" id="contact_subject">
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="form-group">
+									<div class="col-md-12">
+										<label>Message *</label>
+										<textarea required maxlength="5000" data-msg-required="Please enter your message." rows="10" class="form-control" name="contact_comment" id="contact_comment"></textarea>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<input class="hidden" type="text" name="captcha" id="captcha" value="" />
+									<!-- keep it hidden -->
+									<input type="submit" value="Send Message" class="btn btn-primary btn-lg" id="contact_submit" />
+								</div>
+							</div>
+						</form>
+
+					</div>
+					<!-- /FORM -->
+
+
+					<!-- INFO -->
+					<div class="col-md-4">
+
+						<h2>Visit Us</h2>
+
+						<p>
+							We will typically respond within 24 hours for requests received Monday thru Friday. For requests received during the weekend, a respond can typically be expeted monday.
+						</p>
+
+						<div class="divider half-margins">
+							<!-- divider -->
+						</div>
+
+						<p>
+							<span class="block"><strong><i class="fa fa-map-marker"></i> Address:</strong> Aastrupvej 10, 9800 Hjoerring, Denmark</span>
+							<span class="block"><strong><i class="fa fa-phone"></i> Phone:</strong> +45 98 90 49 16</span>
+							<span class="block"><strong><i class="fa fa-envelope"></i> Email:</strong> <a href="mailto:mail@yourdomain.com">mail@app-solutions.com</a></span>
+						</p>
+
+						<div class="divider half-margins">
+							<!-- divider -->
+						</div>
+
+						<h4 class="font300">Business Hours</h4>
+						<p>
+							<span class="block"><strong>Monday - Thursday:</strong> 9am to 5pm UTC/GMT+1/CET</span>
+							<span class="block"><strong>Friday:</strong> 9am to 4pm UTC/GMT+1/CET</span>
+							<span class="block"><strong>Saturday - Sunday:</strong> Closed</span>
+						</p>
+
+					</div>
+					<!-- /INFO -->
+
+				</div>
+
+			</div>
+		</section>
+		<!-- /CONTENT -->
+
+
+		<!-- /CONTENT -->
+
+
+		<!-- FOOTER -->
+		<div id="footer"></div>
+		<!-- /FOOTER -->
+
+		<a href="#" id="toTop"></a>
+
+	</div>
+	<!-- /#wrapper -->
+
+	<!-- JAVASCRIPT FILES -->
+	<script type="text/javascript" src="assets/plugins/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="assets/plugins/jquery.isotope.js"></script>
+	<script type="text/javascript" src="assets/plugins/masonry.js"></script>
+
+	<script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+	<script type="text/javascript" src="assets/plugins/owl-carousel/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="assets/plugins/knob/js/jquery.knob.js"></script>
+	<script type="text/javascript" src="assets/plugins/flexslider/jquery.flexslider-min.js"></script>
+
+	<!-- REVOLUTION SLIDER -->
+	<script type="text/javascript" src="assets/plugins/revolution-slider/js/jquery.themepunch.plugins.min.js"></script>
+	<script type="text/javascript" src="assets/plugins/revolution-slider/js/jquery.themepunch.revolution.min.js"></script>
+	<script type="text/javascript" src="assets/js/revolution_slider.js"></script>
+
+	<script type="text/javascript" src="assets/js/scripts.js"></script>
+	<!-- <script type="text/javascript" src="assets/plugins/styleswitcher/styleswitcher.js">/** REMOVE ON PRODUCTION **/</script> -->
+
+	<!-- Re-using stuff-->
+	<script src="js/navigation.js"></script>
+
+	<!-- Lightbox -->
+	<script src="js/ekko-lightbox.min.js"></script>
+	<script src="js/ekko-lightbox.as.js"></script>
+</body>
+
+</html>
